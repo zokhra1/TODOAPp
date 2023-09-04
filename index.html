@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="syle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header-text">My To do List</h1>
+    </div>
+    <div class="week-days">
+      <ul class="week-days-list">
+        <li class="week-day">
+          <button
+            class="button weekday__button--1 weekday__button--active"
+            data-button="1"
+          >
+            MON
+          </button>
+        </li>
+        <li class="week-day">
+          <button class="button weekday__button--2" data-button="2">TUE</button>
+        </li>
+        <li class="week-day">
+          <button class="button weekday__button--3" data-button="3">WED</button>
+        </li>
+        <li class="week-day">
+          <button class="button weekday__button--4" data-button="4">THU</button>
+        </li>
+        <li class="week-day">
+          <button class="button weekday__button--5" data-button="5">FRI</button>
+        </li>
+        <li class="week-day">
+          <button class="button weekday__button--6" data-button="6">SAT</button>
+        </li>
+        <li class="week-day">
+          <button class="button weekday__button--7" data-button="7">SUN</button>
+        </li>
+      </ul>
+    </div>
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <ion-icon class="plus-icon" name="add-circle-outline"></ion-icon>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="todo-container todo__container--1 todo__container--active">
+      <ul class="todo-list">
+        <!-- <div class="todo"> -->
+        <!-- <li class="todo-item">
+            <p>
+              good morning Lorem ipsum dolor sit amet consectetur adipisicing
+            </p>
+            <div class="icons">
+              <button class="complete-btn">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </button>
+              <button class="trash-btn">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </li> -->
+        <!-- </div> -->
+      </ul>
+    </div>
+
+    <div class="todo-container todo__container--2">
+      <ul class="todo-list"></ul>
+    </div>
+    <div class="todo-container todo__container--3">
+      <ul class="todo-list"></ul>
+    </div>
+    <div class="todo-container todo__container--4">
+      <ul class="todo-list"></ul>
+    </div>
+    <div class="todo-container todo__container--5">
+      <ul class="todo-list"></ul>
+    </div>
+    <div class="todo-container todo__container--6">
+      <ul class="todo-list"></ul>
+    </div>
+    <div class="todo-container todo__container--7">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
